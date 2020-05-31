@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".frag.ThirdFragment">
+
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_322" />
+
+
+    <TextView
+        android:id="@+id/tv_cloudy"
+        android:layout_width="@dimen/dp_68"
+        android:layout_height="@dimen/dp_29"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="Cloudy"
+        android:textColor="#ffffffff"
+        android:textSize="22sp" />
+
+
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/dp_82"
+        android:layout_below="@id/tv_cloudy"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_2"
+        android:text="8"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/sp_70" />
+
+    <TextView
+        android:layout_width="@dimen/dp_29"
+        android:layout_height="@dimen/dp_42"
+        android:layout_below="@id/tv_cloudy"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:layout_marginTop="@dimen/dp_6"
+        android:layout_toRightOf="@id/tv_num"
+        android:text="℃"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/sp_32" />
+
+    <TextView
+        android:id="@+id/tv_today_checked"
+        android:layout_width="@dimen/dp_240"
+        android:layout_height="@dimen/dp_44"
+        android:layout_below="@id/iv_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_m_22"
+        android:background="@drawable/bg_bottom3_orange"
+        android:gravity="center"
+        android:text="Flag Today's Outfit"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/sp_20" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_bg"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_82"
+        android:layout_marginRight="@dimen/dp_20"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/city_name"
+            android:layout_width="@dimen/dp_91"
+            android:layout_height="@dimen/dp_29"
+            android:text="NanJing"
+            android:textColor="#ff333333"
+            android:textSize="@dimen/sp_24" />
+
+        <TextView
+            android:id="@+id/tv_today"
+            android:layout_width="@dimen/dp_54"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginRight="@dimen/dp_12"
+            android:layout_toLeftOf="@id/tv_tomorrow"
+            android:text="Today"
+            android:textColor="#ffe66b2e"
+            android:textSize="@dimen/sp_20" />
+
+        <TextView
+            android:id="@+id/tv_tomorrow"
+            android:layout_width="@dimen/dp_91"
+            android:layout_height="@dimen/dp_27"
+            android:layout_alignParentRight="true"
+            android:text="Tomorrow"
+            android:textColor="#ffcccccc"
+            android:textSize="@dimen/sp_20" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_so"
+        android:layout_width="@dimen/dp_96"
+        android:layout_height="@dimen/dp_19"
+        android:layout_below="@id/rl"
+        android:layout_alignLeft="@id/rl"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="Suitable Outfits"
+        android:textColor="#ff333333"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:layout_width="@dimen/dp_236"
+        android:layout_height="@dimen/dp_48"
+        android:layout_below="@id/tv_so"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_30"
+        android:gravity="center"
+        android:text="There is nothing.\nPlease flag today's outfit first."
+        android:textColor="#ffcccccc"
+        android:textSize="@dimen/sp_18" />
+
+
+</RelativeLayout>

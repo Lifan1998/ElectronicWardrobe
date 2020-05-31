@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frag.ForthFragment">
+
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_188" />
+
+
+    <ImageButton
+        android:id="@+id/ib_lingdang"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_14"
+        android:layout_marginRight="@dimen/dp_20"
+        android:background="@drawable/icon_setting" />
+
+    <ImageButton
+        android:id="@+id/ib_setting"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_14"
+        android:background="@drawable/icon_lingdang" />
+
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="@dimen/dp_93"
+        android:layout_height="@dimen/dp_93"
+        android:layout_below="@id/iv_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_m_60" />
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="@dimen/dp_139"
+        android:layout_height="@dimen/dp_36"
+        android:layout_below="@id/iv_head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center"
+        android:text="NoorEshHo"
+        android:textColor="#ff333333"
+        android:textSize="@dimen/sp_27" />
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_below="@id/tv_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_5"
+        android:gravity="center"
+        android:text="Less is more."
+        android:textColor="#ffcccccc"
+        android:textSize="@dimen/sp_14" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_below="@id/tv_2"
+        android:layout_marginTop="@dimen/dp_50"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_75"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="@dimen/dp_68"
+                android:layout_height="@dimen/dp_19"
+                android:gravity="center"
+                android:text="Most Used"
+                android:textColor="#ff333333"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_width="@dimen/dp_19"
+                android:layout_height="@dimen/dp_38"
+                android:layout_marginTop="@dimen/dp_2"
+                android:text="8"
+                android:textColor="#ff47b38f"
+                android:textSize="@dimen/sp_32" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="match_parent"
+            android:background="@drawable/vertical_imaginary_line"
+            android:layerType="software" />
+
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_75"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="@dimen/dp_68"
+                android:layout_height="@dimen/dp_19"
+                android:gravity="center"
+                android:text="Less Used"
+                android:textColor="#ff333333"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_width="@dimen/dp_19"
+                android:layout_height="@dimen/dp_38"
+                android:layout_marginTop="@dimen/dp_2"
+                android:text="6"
+                android:textColor="#E66B2E"
+                android:textSize="@dimen/sp_32" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_1"
+        android:layout_marginTop="@dimen/dp_55"
+        android:gravity="center_horizontal">
+
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_120"
+            android:layout_height="@dimen/dp_40"
+            android:background="@drawable/bg_bottom4_pink"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_16"
+                android:background="@drawable/icon_bottom4_1" />
+
+            <TextView
+                android:layout_width="@dimen/dp_68"
+                android:layout_height="@dimen/dp_16"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:text="Data Backup"
+                android:textColor="#ff999999"
+                android:textSize="@dimen/sp_12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_120"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:background="@drawable/bg_bottom4_pink"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_16"
+                android:background="@drawable/icon_bottom4_2" />
+
+            <TextView
+                android:layout_width="@dimen/dp_68"
+                android:layout_height="@dimen/dp_16"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:text="Use Tutorial"
+                android:textColor="#ff999999"
+                android:textSize="@dimen/sp_12" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

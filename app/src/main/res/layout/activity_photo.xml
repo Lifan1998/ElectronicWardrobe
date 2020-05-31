@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".act.PhotoActivity">
+
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_68"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/dp_26"
+            android:layout_height="@dimen/dp_26"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="@dimen/dp_26"
+            android:layout_height="@dimen/dp_26"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_360"
+        android:layout_height="@dimen/dp_415">
+
+        <androidx.camera.view.CameraView
+            android:id="@+id/view_camera"
+            android:layout_width="@dimen/dp_360"
+            android:layout_height="@dimen/dp_415" />
+
+        <!-- line         -->
+        <RelativeLayout
+            android:id="@+id/rl_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginTop="@dimen/dp_138"
+                android:background="@drawable/white_line2" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dp_138"
+                android:background="@drawable/white_line2" />
+
+            <View
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_120"
+                android:background="@drawable/white_line2" />
+
+            <View
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_120"
+                android:background="@drawable/white_line2" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn_torch"
+            android:layout_width="@dimen/dp_42"
+            android:layout_height="@dimen/dp_42"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_50"
+            android:background="@drawable/icon_lightning" />
+
+        <Button
+            android:id="@+id/btn_take"
+            android:layout_width="@dimen/dp_77"
+            android:layout_height="@dimen/dp_77"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_takephoto_circle" />
+
+        <Button
+            android:id="@+id/btn_replace"
+            android:layout_width="@dimen/dp_42"
+            android:layout_height="@dimen/dp_42"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_50"
+            android:background="@drawable/icon_camera" />
+    </RelativeLayout>
+
+
+</LinearLayout>

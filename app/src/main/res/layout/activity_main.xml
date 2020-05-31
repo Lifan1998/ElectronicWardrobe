@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".act.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginLeft="@dimen/dp_32"
+        android:layout_marginRight="@dimen/dp_32"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rb_1"
+            android:layout_width="@dimen/dp_26"
+            android:layout_height="@dimen/dp_26"
+            android:background="@drawable/bottom1"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/rb_2"
+            android:layout_width="@dimen/dp_26"
+            android:layout_height="@dimen/dp_26"
+            android:layout_marginLeft="@dimen/dp_64"
+            android:background="@drawable/bottom2"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/rb_3"
+            android:layout_width="@dimen/dp_26"
+            android:layout_height="@dimen/dp_26"
+            android:layout_marginLeft="@dimen/dp_64"
+            android:background="@drawable/bottom3"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/rb_4"
+            android:layout_width="@dimen/dp_26"
+            android:layout_height="@dimen/dp_26"
+            android:layout_marginLeft="@dimen/dp_64"
+            android:background="@drawable/bottom4"
+            android:button="@null" />
+
+    </RadioGroup>
+
+
+</LinearLayout>
